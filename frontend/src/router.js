@@ -3,6 +3,7 @@ import {Choice} from "./components/choice.js";
 import {Test} from "./components/test.js";
 import {Result} from "./components/result.js";
 import {Auth} from "./services/auth.js";
+import {RightResults} from "./components/rightResults.js";
 
 export class Router {
     constructor() {
@@ -64,6 +65,15 @@ export class Router {
                 styles: 'styles/result.css',
                 load: () => {
                     new Result();
+                }
+            },
+            {
+                route: '#/right-answers',
+                pageTitle: 'Правильные ответы',
+                template: 'templates/right-answers.html',
+                styles: 'styles/right-answers.css',
+                load: () => {
+                    new RightResults();
                 }
             },
         ]

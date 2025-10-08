@@ -25,6 +25,13 @@ export class Result {
                         throw new Error(result.error);
                     }
                     document.getElementById('result-score').innerText = result.score + '/' + result.total;
+
+                    const gotoRightAnswers = document.getElementById('goto-right-answers');
+                    const that = this;
+                    gotoRightAnswers.onclick = function() {
+                        location.href = '#/right-answers?id=' + that.routeParams.id;
+                    };
+
                     return;
                 }
             } catch (error) {

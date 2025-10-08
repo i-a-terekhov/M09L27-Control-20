@@ -36,3 +36,36 @@
     font-family: 'Museo Sans Cyrl Bold',sans-serif;
     color: #FFFFFF;
 }
+
+.result-explain {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.result-explain .container {
+    display: flex;
+    justify-content: right;
+}
+
+.result-explain-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.result-explain-link a {
+    font-size: 17px;
+    line-height: 20px;
+    color: #6933DC;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.result-explain-link a:hover {
+    text-decoration: underline;
+}
+
+.result-explain-link a img {
+    margin-left: 13px;
+}

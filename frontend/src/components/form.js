@@ -130,6 +130,7 @@ export class Form {
                     Auth.setUserInfo({
                         fullName: result.fullName,
                         userId: result.userId,
+                        userEmail: email,
                     });
                     location.href = '#/choice';
                 }
